@@ -14,10 +14,14 @@
   <center><h1>Nick's Limitless Plateau</h1></center>
   <table class="table">
   <tbody>
-    <tr><td>The Guardian</td> <td><a href="<%= @guardian.entries.first.link %>"><%= @guardian.entries.first.title %></a></td></tr>
-    <tr><td>Al Jazeera</td> <td><a href="<%= @aljaz.entries.first.link %>"><%= @aljaz.entries.first.title %></a></td></tr>
+    <tr>
+      <td>The Guardian</td> <td><a href="<%= @guardian.entries.first.link %>"><%= @guardian.entries.first.title %></a></td>
+    </tr>
+    
+    <tr>
+      <td>Al Jazeera</td> <td><a href="<%= @aljaz.entries.first.link %>"><%= @aljaz.entries.first.title %></a></td></tr>
     <tr><td>Sky News</td> <td><a href="<%= @skynews.entries.first.link %>"><%= @skynews.entries.first.title %></a></td></tr>
-    <tr><td>BBC News</td> <td><a href="<%= @beeb.entries.first.link %>"><%= @beeb.entries.first.title %></a></td></tr>
+    <tr><td><img src="<%= @bbc_icon %>"></td> <td><a href="<%= @beeb.entries.first.link %>"><%= @beeb.entries.first.title %></a></td></tr>
     <tr><td>CNN</td> <td><a href="<%= @cnn.entries.first.link %>"><%= @cnn.entries.first.title %></a></td></tr>
   </tbody>
   </table>
